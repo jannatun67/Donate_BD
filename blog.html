@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate BAngladesh</title>
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              },
+              font:{
+                lexend: "Lexend",
+              }
+            }
+          }
+        }
+      </script>
+
+</head>
+<body>
+    <header class="lexend sticky top-0 bg-slate-50 z-10 pb-5">
+        <div class="bg-yellow-50 p-3">
+           
+            <div class="navbar w-11/12 mx-auto">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div  class="btn px-6 text-xl bg-lime-300">
+                      <button> <a href="#blog.html">Blog</a></button>
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="navbar-center">
+                    <img src="assets/logo.png" alt="">
+                  <a class=" text-xl font-semibold">Donate Bangladesh</a>
+                </div>
+                <div class="navbar-end">
+                  <img src="assets/coin.png" alt="">
+                    <p class="font-medium text-xl">600 BDT</p>
+                </div>
+              </div>
+        </div>
+        <div class="w-11/12 mx-auto dis mt-12">
+            <div class="flex justify-center space-x-6 ">
+            <button class="btn text-xl font-semibold bg-lime-300 px-5">Donation</button>
+            <button class="btn text-xl font-semibold text-gray-400 border border-gray-400 bg-white px-5">History</button>
+        </div>
+        </div>
+    </header>
+    <main>
+        <div class="w-11/12 mx-auto space-y-4 ">
+            <div class="collapse collapse-arrow  border border-gray-300 shadow-sm">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                  <p> The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow  border border-gray-300 shadow-sm">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                  <p>The getElementById, ClassName,TagName,querySelector, querySelectorAll,Changing the Attribute , Text Content, HTML Content method allows you to select an element</p>
+                </div>
+              </div>
+              <div class="collapse collapse-arrow border border-gray-300 shadow-sm">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?
+                </div>
+                <div class="collapse-content">
+                  <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated. </p>
+                </div>
+              </div>
+
+              <div class="collapse collapse-arrow border border-gray-300 shadow-sm">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?
+                </div>
+                <div class="collapse-content">
+                  <p>The classList object only provide methods to change the class of an element. If you want to change other attributes like id , href , or src , you can use the setAttribute() method.  </p>
+                </div>
+              </div>
+        </div>
+    </main>
+</body>
+</html>
