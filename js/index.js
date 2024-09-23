@@ -22,7 +22,7 @@ document.getElementById('donation-now').addEventListener('click', function(){
     if (donationAmount <=0 || isNaN(donationAmount) ) {
         alert('⚠️ Invalid Amount!')
        
-     }else if (amount<donationAmount2) {
+     }else if (amount<donationAmount) {
         alert('⚠️ Balance Low!')
     }
       else{
@@ -61,8 +61,6 @@ document.getElementById('donation-now2').addEventListener('click', function(){
         
     }else if (amount<donationAmount2) {
         alert('⚠️ Balance Low!')
-    }else if (amount<donationAmount2) {
-        alert('⚠️ Balance Low!')
     }
     else{
         const total = amount-donationAmount2;
@@ -95,7 +93,10 @@ document.getElementById('donation-now3').addEventListener('click', function(){
     if (donationAmount3 <=0 || isNaN(donationAmount3)) {
         alert('⚠️ Invalid Amount!')
       
-    }else{
+    }else if (amount<donationAmount2) {
+        alert('⚠️ Balance Low!')
+    }
+    else{
         const total = amount-donationAmount3;
   
         document.getElementById('amount').innerText= total.toFixed(2);
